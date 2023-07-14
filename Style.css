@@ -1,8 +1,7 @@
-div {
-    height: 100px;
-    width: 100px;
-    border: 2px solid black;
-    display: inline-block;
+body {
+    background-image: url(ohh.webp);
+    background-repeat: repeat;
+    background-size: cover;
 }
 #Footer, #Header {
     position: fixed;
@@ -14,47 +13,6 @@ div {
     font-weight: 900;
     font-size: 1.5rem;
 }
-#Footer {
-    background-color: blue;
-    bottom: 0;
-}
-#Header {
-    background-color: black;
-    top: 0;
-}
-a {
-    text-decoration: none;
-    color: black;
-    background-color: green;
-    font-size: 100px;
-    font-weight: 900;
-    position: absolute;
-}
-iframe {
-    height: 500px;
-    width: 1300px;
-    position: absolute;
-    top: 60px;
-    left: 30px;
-}
-#one {
-    top: 70px;
-}
-#Back {
-    font-size: 25px;
-    top: 5px;
-    background-color: red;
-    color: aqua;
-    width: 100px;
-    height: 25px;
-    padding-left: 10px;
-}
-#three {
-    top: 360px;
-}
-#two {
-    top: 220px;
-}
 #exit {
     bottom: 50px;
     font-size: 25px;
@@ -64,4 +22,113 @@ iframe {
     height: 50px;
     text-align: center;
     padding-top: 10px;
+}
+a {
+    text-decoration: none;
+    color: black;
+    background-color: green;
+    position: absolute;
+    transition:all 1s ease-in-out 0.01s;
+}
+iframe {
+    height: 90vh;
+    width: 95vw;
+    position: absolute;
+    top: 55px;
+    left: 2%;
+}
+#Back {
+    font-size: 20px;
+    top: 0.6%;
+    background-color: red;
+    color: aqua;
+    width: 6vw;
+    height: 2.5vh;
+}
+@media (min-width : 1300px) {
+    div {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        display: inline-block;
+    }
+    #Footer {
+        background-color: blue;
+        bottom: 0;
+    }
+    #Header {
+        background-color: black;
+        top: 0;
+    }
+    a {
+        font-size: 100px;
+        font-weight: 900;
+    }
+    #one {
+        top: 70px;
+    }
+    #three {
+        top: 360px;
+    }
+    #two {
+        top: 220px;
+    }
+    a:hover {
+        background-color: yellow;
+    }
+    a:active {
+        cursor:wait;
+        transition-delay: 2s;
+    }
+    div:hover {
+        cursor: not-allowed;
+    }
+}
+@media (max-width : 1300px) {
+    div {
+        height: 50px;
+        width: 50px;
+        border: 2px solid black;
+        display: inline-block;
+    }
+    #Footer {
+        background-color: blue;
+        bottom: 0;
+    }
+    #Header {
+        background-color: black;
+        top: 0;
+    }
+    a {
+        font-size: 50px;
+        font-weight: 600;
+    }
+    #one {
+        top: 35px;
+    }
+    #Back {
+        font-size: 15px;
+        top: 5px;
+        background-color: red;
+        color: aqua;
+        width: 50px;
+        height: 15px;
+        padding-left: 5px;
+    }
+    #three {
+        top: 180px;
+    }
+    #two {
+        top: 110px;
+    }
+    a:hover {
+        background-color: yellow;
+    }
+    a:active {
+        cursor:wait;
+        transition-delay: 2s;
+    }
+    div:hover {
+        cursor: not-allowed;
+    }
 }
